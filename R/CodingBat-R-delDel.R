@@ -14,15 +14,17 @@
 delDel <- function(str){
   if(nchar(str) < 3 ){
     return(str)
-  }else if(substr(str,1,3) == "del"){
-    return(substr(str,4, nchar(str)))
+  }else if(substr(str,2,4) == "del"){
+    return( paste(substr(str, 0,1) , substr(str,5, nchar(str)), sep=""))
   }else {
     return(str)
   }
 }
 
-delDel("delaffd")
-delDel("deua")
+delDel("adelaffd")
+delDel("adeua")
 delDel("de")
-delDel("del")
+delDel("adel")
 delDel("eegghtr")
+delDel("eegghtdelr")
+delDel("r")
