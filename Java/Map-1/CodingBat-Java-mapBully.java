@@ -1,20 +1,21 @@
 /*
-Project: Solution of CodingBat Map-1 mapBully by using Java.
+Project: Solution of CodingBat Map-1 mapShare by using Java.
 Date: 28.07.2020
 Author: OzlemKorpe
 */
 /*
-Modify and return the given map as follows: if the key "a" has a value, set the key "b" to have that value, and set the key "a" to have the value "". Basically "b" is a bully, taking the value and replacing it with the empty string.
+Modify and return the given map as follows: if the key "a" has a value, set the key "b" to have that same value. In all cases remove the key "c", leaving the rest of the map unchanged.
 
 
-mapBully({"a": "candy", "b": "dirt"}) → {"a": "", "b": "candy"}
-mapBully({"a": "candy"}) → {"a": "", "b": "candy"}
-mapBully({"a": "candy", "b": "carrot", "c": "meh"}) → {"a": "", "b": "candy", "c": "meh"}
+mapShare({"a": "aaa", "b": "bbb", "c": "ccc"}) → {"a": "aaa", "b": "aaa"}
+mapShare({"b": "xyz", "c": "ccc"}) → {"b": "xyz"}
+mapShare({"a": "aaa", "c": "meh", "d": "hi"}) → {"a": "aaa", "b": "aaa", "d": "hi"}
 */
 
-public Map<String, String> mapBully(Map<String, String> map) {
+public Map<String, String> mapShare(Map<String, String> map) {
   if(map.containsKey("a")){
     map.put("b",map.get("a"));
-    map.put("a","");
-  } return map;
+  }
+  map.remove("c");
+  return map;
 }
