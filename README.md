@@ -7,7 +7,7 @@ Solutions of CodingBat problems in different programming languages.
 - [ ] Warmup-2
 - [ ] String-1
 - [ ] Array-1
-- [ ] Logic-1
+- [x] Logic-1
 - [ ] String-2
 - [ ] String-3
 - [ ] Array-2
