@@ -3,7 +3,7 @@
 Solutions of CodingBat problems in different programming languages.
 
 ## Java
-- [ ] Warmup-1
+- [x] Warmup-1
 - [ ] Warmup-2
 - [ ] String-1
 - [ ] Array-1
