@@ -29,5 +29,3 @@ Solutions of CodingBat problems in different programming languages.
 - [ ] Logic-1
 - [ ] String-2
 - [ ] Logic-2
-
-## R
